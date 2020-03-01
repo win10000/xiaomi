@@ -1,17 +1,165 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="../lib/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="../sass/index.min.css">
+    <link rel="stylesheet" href="../css/common/common.css">
+    <link rel="stylesheet" href="../lib/swiper/css/swiper.min.css">
 </head>
+
 <body>
-    <h1>小米网站 首页</h1>
-    <h2>小米网站 首页</h2>
-    <h3>小米网站 首页</h3>
-    
+
+    <!-- 页头 -->
+    <section class="header">
+        <!-- 疫情广告 -->
+        <section class="site-bn-bar">
+            <a href=""></a>
+        </section>
+        <!-- 导航栏 -->
+        <section class="site-topbar">
+            <article class="container">
+                <!-- 导航栏 -->
+                <nav class="topbar-nav">
+                    <li><a href="">小米商城</a></li><span>|</span>
+                    <li><a href="">MIUI</a></li><span>|</span>
+                    <li><a href="">loT</a></li><span>|</span>
+                    <li><a href="">云服务</a></li><span>|</span>
+                    <li><a href="">金融</a></li><span>|</span>
+                    <li><a href="">有品</a></li><span>|</span>
+                    <li><a href="">小爱开放平台</a></li><span>|</span>
+                    <li><a href="">企业团购</a></li><span>|</span>
+                    <li><a href="">资质证照</a></li><span>|</span>
+                    <li><a href="">协议规则</a></li><span>|</span>
+                    <li><a href="">下载app</a></li><span>|</span>
+                    <li><a href="">Select Location</a></li>
+                </nav>
+                <!-- 购物车 -->
+                <article class="topbar-cart">
+                    <em class="glyphicon glyphicon-heart"></em>
+                    <em>购物车</em>
+                    <span>(0)</span>
+                </article>
+                <!-- 登录注册 -->
+                <article class="topbar-info">
+                    <a href="#">登录</a>
+                    <span class="vertical">|</span>
+                    <a href="#">注册</a>
+                    <span class="vertical">|</span>
+                    <span class="message">消息通知</span>
+                </article>
+            </article>
+        </section>
+        <!-- 图标品牌导航条 -->
+        <section class="site-header ">
+            <article class="container">
+                <!-- logo图标 -->
+                <article class="header-logo">
+                    <a href="#">
+                        <img src="../images/mi-logo.png" alt="小米logo">
+                    </a>
+                </article>
+                <!-- 导航条 -->
+                <article class="header-nav">
+                    <ul class="nav_list">
+                        <li class="nav-category"><a href="#"></a></li>
+                        <li class="nav-item"><a href="#">小米手机</a></li>
+                        <li class="nav-item"><a href="#">Redmi红米</a></li>
+                        <li class="nav-item"><a href="#">电视</a></li>
+                        <li class="nav-item"><a href="#">笔记本</a></li>
+                        <li class="nav-item"><a href="#">家电</a></li>
+                        <li class="nav-item"><a href="#">路由器</a></li>
+                        <li class="nav-item"><a href="#">智能硬件</a></li>
+                        <li class="nav-item"><a href="#">服务</a></li>
+                        <li class="nav-item"><a href="#">社区</a></li>
+                    </ul>
+                </article>
+                <!-- 搜索框 -->
+                <article class="header-search">
+                    <form action="">
+                        <input type="search" class="search-text">
+                        <input type="submit" class="search-btn">
+                        <article class="search-hot-words">
+                            <a href="https://www.mi.com/mi9pro/"
+                                data-log_code="31pcsearchother000000#t=normal&amp;act=webview&amp;page=search&amp;bid=3458452.1"
+                                data-stat-id="411e6fcc586b17c7"
+                                onclick="_msq.push(['trackEvent', '81190ccc4d52f577-411e6fcc586b17c7', 'https://www.mi.com/mi9pro/', 'pcpid', '31pcsearchother000000#t=normal&amp;act=webview&amp;page=search&amp;bid=3458452.1']);">小米9
+                                Pro 5G</a>
+                            <a href="https://www.mi.com/redminote8"
+                                data-log_code="31pcsearchother000000#t=normal&amp;act=webview&amp;page=search&amp;bid=3459161.1"
+                                data-stat-id="ad7c46eb731a5d58"
+                                onclick="_msq.push(['trackEvent', '81190ccc4d52f577-ad7c46eb731a5d58', 'https://www.mi.com/redminote8', 'pcpid', '31pcsearchother000000#t=normal&amp;act=webview&amp;page=search&amp;bid=3459161.1']);">Redmi
+                                Note 8</a>
+                        </article>
+                    </form>
+                </article>
+            </article>
+        </section>
+    </section>
+
+    <!-- 网页内容 -->
+    <main>
+        <!-- 轮播图部分 -->
+        <section class="home-hero-container">
+            <!-- 用人家的插件，只能使用人家标签和样式呀，你删了还怎么用人家的插件 -->
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img style="width: 100%;height: 100%;"
+                            src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/e5b37cdb85b3b93b5938cc508a10c906.jpg?w=2452&h=920"
+                            alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/88d38b71a1db33b64827236e2155fbba.jpg?thumb=1&w=1226&h=460&f=webp&q=90"
+                            alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/b499b1b874c0f968e731471fa5e5f3ab.jpg?thumb=1&w=1226&h=460&f=webp&q=90"
+                            alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/6bd4174b8c5aad67a64864a5716ad152.jpg?thumb=1&w=1226&h=460&f=webp&q=90"
+                            alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/755aca9487082e7698e16f17cfb70839.jpg?thumb=1&w=1226&h=460&f=webp&q=90"
+                            alt="">
+                    </div>
+                </div>
+                <section class="site-category">
+
+                </section>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-pagination"></div>
+
+            </div>
+
+        </section>
+    </main>
+
     <script src="../lib/jquery/dist/jquery.min.js"></script>
     <script src="../js/index.js"></script>
+    <script src="../lib/swiper/js/swiper.min.js"></script>
+    <script>
+        var mySwiper = new Swiper('.swiper-container', {
+            autoplay: {
+                stopOnLastSlide: true,
+                delay: 5000,
+            },
+            loop: true,
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            pagination: {
+                el: '.swiper-pagination',
+            },
+        })
+    </script>
 </body>
+
 </html>

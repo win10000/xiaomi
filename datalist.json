@@ -1,0 +1,156 @@
+[
+    " 小米 9",
+    " Redmi K20 pro",
+    " Redmi K20",
+    " Redmi Note 7 Pro",
+    " Redmi note 7",
+    " 小米电视4c",
+    " 电视32英寸",
+    " 笔记本pro",
+    " 小爱音箱",
+    " 净水器"
+]
+
+
+[
+    {
+        "url": "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/0099822e42b4428cb25c4cdebc6ca53d.jpg",
+        "title": "小米10",
+        "price": "3999元 起",
+        "priceDel": "",
+        "urlItem": [
+            "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/0099822e42b4428cb25c4cdebc6ca53d.jpg"
+        ],
+        "activity": [
+            "http://cdn.cnbj0.fds.api.mi-img.com/b2c-mimall-media/05c84c8d8ffebf7fd17c8838b5d81ee6.png"
+        ]
+    },
+    {
+        "url": "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1581493999.49592807.jpg",
+        "title": "小米10 全网通版 8GB+128GB 冰海蓝",
+        "price": "3999元",
+        "priceDel": "",
+        "urlItem": [
+            "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1581493999.49592807.jpg",
+            "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1581494045.31058391.jpg",
+            "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1581494131.03158032.jpg"
+        ],
+        "activity": [
+            "http://cdn.cnbj0.fds.api.mi-img.com/b2c-mimall-media/05c84c8d8ffebf7fd17c8838b5d81ee6.png"
+        ]
+    },
+    {
+        "url": "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1582803955.15187503.jpg",
+        "title": "小米10 全网通版 8GB+256GB 蜜桃金",
+        "price": "4299元",
+        "priceDel": "",
+        "urlItem": [
+            "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1582803971.23959384.jpg",
+            "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1582804005.79426460.jpg",
+            "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1582803955.15187503.jpg"
+        ],
+        "activity": [
+            "http://cdn.cnbj0.fds.api.mi-img.com/b2c-mimall-media/05c84c8d8ffebf7fd17c8838b5d81ee6.png"
+        ]
+    },
+    {
+        "url": "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1581494493.13637506.jpg",
+        "title": "小米10 全网通版 12GB+256GB 冰海蓝",
+        "price": "4699元",
+        "priceDel": "",
+        "urlItem": [
+            "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1581494493.13637506.jpg",
+            "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1581494477.00564123.jpg",
+            "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1581494513.07789117.jpg"
+        ],
+        "activity": [
+            "http://cdn.cnbj0.fds.api.mi-img.com/b2c-mimall-media/05c84c8d8ffebf7fd17c8838b5d81ee6.png"
+        ]
+    },
+    {
+        "url": "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/ccd09671448c4cdb4a3817f68f788662.jpg",
+        "title": "小米10 Pro",
+        "price": "4999元 起",
+        "priceDel": "",
+        "urlItem": [
+            "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/ccd09671448c4cdb4a3817f68f788662.jpg"
+        ],
+        "activity": [
+            "http://cdn.cnbj0.fds.api.mi-img.com/b2c-mimall-media/05c84c8d8ffebf7fd17c8838b5d81ee6.png"
+        ]
+    },
+    {
+        "url": "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1581493274.50817754.jpg",
+        "title": "小米10 Pro 全网通版 8GB内存 珍珠白 256GB 白色",
+        "price": "4999元",
+        "priceDel": "",
+        "urlItem": [
+            "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1581493274.50817754.jpg",
+            "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1581493329.10251213.jpg"
+        ],
+        "activity": [
+            "http://cdn.cnbj0.fds.api.mi-img.com/b2c-mimall-media/05c84c8d8ffebf7fd17c8838b5d81ee6.png"
+        ]
+    },
+    {
+        "url": "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1581493575.05234874.jpg",
+        "title": "小米10 Pro 全网通版 12GB+256GB 珍珠白",
+        "price": "5499元",
+        "priceDel": "",
+        "urlItem": [
+            "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1581493575.05234874.jpg",
+            "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1581493613.49827882.jpg"
+        ],
+        "activity": [
+            "http://cdn.cnbj0.fds.api.mi-img.com/b2c-mimall-media/05c84c8d8ffebf7fd17c8838b5d81ee6.png"
+        ]
+    },
+    {
+        "url": "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1582542706.13948899.jpg",
+        "title": "小米10 Pro 全网通版 12GB+512GB 珍珠白",
+        "price": "5999元",
+        "priceDel": "",
+        "urlItem": [
+            "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1582542706.13948899.jpg",
+            "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1582542723.04931635.jpg"
+        ],
+        "activity": [
+            "http://cdn.cnbj0.fds.api.mi-img.com/b2c-mimall-media/05c84c8d8ffebf7fd17c8838b5d81ee6.png"
+        ]
+    },
+    {
+        "url": "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/53641901fbc28cbcdb495b17fdf69e46.jpg",
+        "title": "Redmi K30 5G",
+        "price": "1999元 起",
+        "priceDel": "",
+        "urlItem": [
+            "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/53641901fbc28cbcdb495b17fdf69e46.jpg"
+        ],
+        "activity": [
+            "http://cdn.cnbj0.fds.api.mi-img.com/b2c-mimall-media/5f9034fa592b46b4e965fba89808c44d.png",
+            "http://cdn.cnbj0.fds.api.mi-img.com/b2c-mimall-media/05c84c8d8ffebf7fd17c8838b5d81ee6.png"
+        ]
+    },
+    {
+        "url": "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1575882013.76522438.jpg",
+        "title": "Redmi K30 5G 6GB+64GB 深海微光",
+        "price": "1999元",
+        "priceDel": "",
+        "urlItem": [
+            "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1575882013.76522438.jpg",
+            "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1575881996.51249752.jpg"
+        ],
+        "activity": [
+            "http://cdn.cnbj0.fds.api.mi-img.com/b2c-mimall-media/5f9034fa592b46b4e965fba89808c44d.png",
+            "http://cdn.cnbj0.fds.api.mi-img.com/b2c-mimall-media/05c84c8d8ffebf7fd17c8838b5d81ee6.png"
+        ]
+    },
+    {
+        "url": "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1575882053.33827103.jpg",
+        "title": "Redmi K30 5G 6GB+128GB 深海微光",
+        "price": "2299元",
+        "priceDel": "",
+        "urlItem": [
+            "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1575882053.33827103.jpg",
+            "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1575882211.1223535.jpg",
+            "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/7feee8fe2d0005c0c967c33e64aa2ebf.webp","https://cdn.cnbj0.fds.api

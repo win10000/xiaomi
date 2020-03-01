@@ -21,7 +21,8 @@
     "gulp-sass": "^4.0.2",
     "gulp-uglify": "^3.0.2",
     "gulp-webserver": "^0.9.1",
-    "node-sass": "^4.13.1"
+    "node-sass": "^4.13.1",
+    "swiper": "^3.4.2"
   },
   "browserslist": [
     "last 2 versions",
@@ -31,7 +32,6 @@
   ],
   "dependencies": {
     "bootstrap": "^3.3.7",
-    "jquery": "^3.4.1",
-    "swiper": "^5.3.1"
+    "jquery": "^3.4.1"
   }
 }

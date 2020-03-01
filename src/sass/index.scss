@@ -1,0 +1,248 @@
+// 页头
+.header {
+  width: 100%;
+  height: 260px;
+  // 疫情广告
+  .site-bn-bar {
+    a {
+      display: block;
+      width: 100%;
+      height: 120px;
+      background: url(https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/3c6c452e61ff2891921110c296cad09a.jpg?thumb=1&w=2560&h=120&f=webp&q=90);
+      background-repeat: no-repeat;
+      background-position: center 0;
+      background-size: auto 120px;
+    }
+  }
+  // 导航栏
+  .site-topbar {
+    width: 100%;
+    height: 40px;
+    background: #333333;
+    margin: 0 auto;
+    .container {
+      width: 1226px;
+      height: 100%;
+
+      // 导航条
+      .topbar-nav {
+        float: left;
+        height: 40px;
+        font-size: 12px;
+        line-height: 40px;
+        display: flex;
+        justify-content: space-between;
+        li {
+          a {
+            color: #b0b0b0;
+            line-height: 40px;
+            display: inline-block;
+            text-decoration: none;
+            &:hover {
+              color: #fff;
+            }
+          }
+        }
+        span {
+          margin: 0 0.4em;
+          color: #424242;
+          font-family: sans-serif;
+        }
+      }
+
+      // 购物车
+      .topbar-cart {
+        float: right;
+        width: 120px;
+        height: 40px;
+        line-height: 40px;
+        margin-left: 15px;
+        -webkit-transition: all 0.2s;
+        transition: all 0.2s;
+        font-size: 12px;
+        background: #424242;
+        text-align: center;
+        cursor: pointer;
+
+        em {
+          font-style: normal;
+          color: #b0b0b0;
+          &:nth-of-type(1) {
+            margin-right: 4px;
+            font-size: 20px;
+            line-height: 20px;
+            vertical-align: -4px;
+          }
+        }
+        span {
+          color: #b0b0b0;
+        }
+      }
+
+      // 登录注册
+      .topbar-info {
+        float: right;
+        height: 40px;
+        line-height: 40px;
+        a {
+          display: inline-block;
+          text-decoration: none;
+          color: #b0b0b0;
+          &:hover {
+            color: #fff;
+          }
+        }
+        .vertical {
+          color: #424242;
+        }
+        .message {
+          padding: 0 10px;
+          color: #b0b0b0;
+          cursor: pointer;
+          &:hover {
+            color: #fff;
+          }
+        }
+      }
+    }
+  }
+
+  // 图标品牌导航条
+  .site-header {
+    width: 100%;
+    .container {
+      width: 1226px;
+      margin: 0 auto;
+      // logo图标
+      .header-logo {
+        float: left;
+        width: 62px;
+        margin-top: 22px;
+        a {
+          display: block;
+          width: 55px;
+          height: 55px;
+          overflow: hidden;
+          background-color: #ff6700;
+        }
+      }
+      // 导航条
+      .header-nav {
+        float: left;
+        .nav_list {
+          float: left;
+          height: 88px;
+          margin: 0;
+          padding: 12px 0 0 30px;
+          list-style-type: none;
+          font-size: 16px;
+          .nav-category {
+            float: left;
+            width: 127px;
+            padding-right: 15px;
+            a {
+              display: block;
+              padding: 26px 0 38px;
+              text-align: right;
+              color: #333;
+              visibility: hidden;
+            }
+          }
+          .nav-item {
+            float: left;
+            a {
+              display: block;
+              padding: 26px 10px 38px;
+              color: #333;
+              -webkit-transition: color 0.2s;
+              transition: color 0.2s;
+              text-decoration: none;
+              &:hover {
+                color: #ff6700;
+              }
+            }
+          }
+        }
+      }
+      // 搜索框
+      .header-search {
+        float: right;
+        width: 296px;
+        margin-top: 25px;
+        form {
+          position: relative;
+          width: 296px;
+          height: 50px;
+          // 搜索框内容
+          .search-text {
+            right: 51px;
+            z-index: 1;
+            width: 223px;
+            height: 48px;
+            padding: 0 10px;
+            font-size: 14px;
+            line-height: 48px;
+            position: absolute;
+            top: 0;
+            border: 1px solid #e0e0e0;
+            outline: 0;
+            -webkit-transition: all 0.2s;
+            transition: all 0.2s;
+          }
+          // 提交按钮
+          .search-btn {
+            right: 0;
+            width: 52px;
+            height: 48px;
+            font-size: 24px;
+            line-height: 24px;
+            background: #fff;
+            color: #616161;
+            position: absolute;
+            top: 0;
+            border: 1px solid #e0e0e0;
+            outline: 0;
+            -webkit-transition: all 0.2s;
+            transition: all 0.2s;
+          }
+          // 数据提示
+          .search-hot-words {
+            position: absolute;
+            top: 14px;
+            right: 62px;
+            z-index: 2;
+            text-align: right;
+            -webkit-transition: opacity 0.2s;
+            transition: opacity 0.2s;
+          }
+        }
+      }
+    }
+  }
+}
+
+// 网页内容
+main {
+  // 轮播图部分
+  .home-hero-container {
+    width: 1226px;
+    margin: 0 auto;
+    position: relative;
+    // 轮播图
+    .swiper-wrapper {
+      width: 600px;
+      height: 460px;
+      // width: 800px;
+    }
+    .site-category {
+      position: absolute;
+      top: 0px;
+      // left: -92px;
+      z-index: 21;
+      width: 234px;
+      height: 460px;
+      font-size: 14px;
+      background: red;
+    }
+  }
+}
