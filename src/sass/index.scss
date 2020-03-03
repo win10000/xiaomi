@@ -129,14 +129,16 @@
       // 导航条
       .header-nav {
         float: left;
-        .nav_list {
+        position: relative;
+        li {
           float: left;
           height: 88px;
+          line-height: 88px;
           margin: 0;
           padding: 12px 0 0 30px;
           list-style-type: none;
           font-size: 16px;
-          .nav-category {
+          &:first-child {
             float: left;
             width: 127px;
             padding-right: 15px;
@@ -148,21 +150,27 @@
               visibility: hidden;
             }
           }
-          .nav-item {
-            float: left;
-            a {
-              display: block;
-              padding: 26px 10px 38px;
-              color: #333;
-              -webkit-transition: color 0.2s;
-              transition: color 0.2s;
-              text-decoration: none;
-              &:hover {
-                color: #ff6700;
-              }
-            }
-          }
+          // .nav-item {
+          //   float: left;
+          //   a {
+          //     display: block;
+          //     padding: 26px 10px 38px;
+          //     color: #333;
+          //     -webkit-transition: color 0.2s;
+          //     transition: color 0.2s;
+          //     text-decoration: none;
+          //     &:hover {
+          //       color: #ff6700;
+          //     }
+          //   }
+          // }
         }
+      }
+
+      .nav_box{
+        background: #fff;
+        position: absolute;
+        top: 240px;
       }
       // 搜索框
       .header-search {
@@ -277,8 +285,10 @@ main {
     width: 1226px;
     margin: 0 auto;
     position: relative;
-    z-index: -1;
     // 轮播图
+    .swiper-container{
+      z-index: 1;
+    }
     .swiper-wrapper {
       width: 600px;
       height: 460px;
@@ -307,6 +317,55 @@ main {
         &:hover {
           background: #ccc;
         }
+      }
+    }
+    .ban_box {
+      height: 100%;
+      background-color: #fff;
+      position: absolute;
+      left: 234px;
+      z-index: 222;
+      top: 0;
+      display: none;
+  
+  
+      >ul {
+        height: 100%;
+        background-color: #fff;
+        top: 0;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        display: flex;
+        justify-content: flex-start;
+        align-content: flex-start;
+        flex-wrap: wrap;
+  
+        >li {
+          height: 86px;
+          width: 300px;
+          background-color: #fff;
+          box-sizing: border-box;
+  
+          >img {
+            margin-left: 20px;
+            vertical-align: middle;
+          }
+  
+          span {
+            margin-left: 10px;
+            font-size: 12px;
+            line-height: 76px;
+          }
+  
+          &:hover {
+            >span {
+              color: orange;
+            }
+          }
+        }
+  
+  
       }
     }
     .swiper-button-prev {
@@ -547,6 +606,10 @@ main {
             margin-left: 8px;
             transition: all 0.4s;
             float: right;
+            cursor: pointer;
+            &:hover{
+              color: #ff6700;
+            }
           }
         }
         // 手机列表
@@ -559,6 +622,7 @@ main {
           .span4 {
             width: 992px;
             float: left;
+            margin-bottom: 30px;
             ul {
               height: 614px;
               li {
@@ -611,6 +675,96 @@ main {
                     text-align: center;
                     color: #ff6700;
                   }
+                }
+              }
+            }
+          }
+        }
+      }
+
+      // 家电模块
+
+      .box-hd1 {
+        height: 58px;
+        h2 {
+          margin: 0;
+          font-size: 22px;
+          font-weight: 200;
+          line-height: 58px;
+          color: #333;
+          float: left;
+        }
+        span {
+          font-size: 16px;
+          line-height: 58px;
+          color: #424242;
+          margin-left: 18px;
+          float: right;
+          a:hover{
+            color: #ff6700;
+            text-decoration: none;
+            border-bottom: 2px solid #ff6700;
+            transition: all 0.4s;
+          }
+        }
+      }
+
+      .row3{
+        .span5 {
+          width: 992px;
+          float: left;
+          margin-bottom: 30px;
+          ul {
+            height: 614px;
+            li {
+              height: 300px;
+              padding: 20px 0;
+              float: left;
+              width: 234px;
+              text-align: center;
+              margin-left: 14px;
+              margin-bottom: 14px;
+              background: #fff;
+              cursor: pointer;
+              transition: all 0.2s linear;
+              &:hover {
+                -webkit-box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+                box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+                -webkit-transform: translate3d(0, -2px, 0);
+                transform: translate3d(0, -2px, 0);
+              }
+              a {
+                display: block;
+                text-decoration: none;
+                .figuer_img {
+                  width: 160px;
+                  height: 160px;
+                  margin: 0 auto 18px;
+                  img {
+                    width: 100%;
+                    height: 100%;
+                  }
+                }
+                .title {
+                  font-size: 14px;
+                  font-weight: 400;
+                  color: #333;
+                  text-overflow: ellipsis;
+                  white-space: nowrap;
+                  overflow: hidden;
+                }
+                .desc {
+                  margin: 0 10px 10px;
+                  height: 18px;
+                  font-size: 12px;
+                  color: #b0b0b0;
+                  text-overflow: ellipsis;
+                  white-space: nowrap;
+                  overflow: hidden;
+                }
+                .price {
+                  text-align: center;
+                  color: #ff6700;
                 }
               }
             }

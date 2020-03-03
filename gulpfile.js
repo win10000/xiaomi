@@ -35,7 +35,7 @@ const cssHandler = () => {
   return gulp.src('./src/css/*.css')   // 找到 src 目录下 css 目录下 所有后缀为 .css 的文件
              .pipe(autoprefixer())   // 把 css 代码自动添加前缀
              .pipe(cssmin())  // 压缩 css 代码
-             .pipe(gulp.dest('./dist/css'))  // 压缩完毕的 css 代码放在 dist 目录下的 css 文件夹里面
+             .pipe(gulp.dest('./dist/sass'))  // 压缩完毕的 css 代码放在 dist 目录下的 css 文件夹里面
 }
 
 // 3. 书写一个打包 js 的方法
@@ -108,8 +108,16 @@ const sassHandler = () => {
              .pipe(sass())
              .pipe(autoprefixer())
              .pipe(cssmin())
-             .pipe(gulp.dest('./dist/css'))
+             .pipe(gulp.dest('./dist/sass'))
+            //  你把这个index.scss文件编译道理css文件夹里面了，它请求的是sass文件夹里面的index.css
+
 }
+
+// const sassHandler = () =>{
+//   return gulp.src('./src/sass/*.scss')
+//     .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
+//     .pipe(gulp.dest('./dist/cass'));
+// }
 
 // 9. 自动监控文件
 //    监控 src 下下面的文件, 只要一修改, 就执行对应的任务
@@ -124,7 +132,7 @@ const watchHandler = () => {
   gulp.watch('./src/sass/*', sassHandler)
 }
 
-
+// sassHandler
 
 // 导出一个默认任务
 module.exports.default = gulp.series(

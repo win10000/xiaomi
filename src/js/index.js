@@ -1,16 +1,6 @@
-var sInfo = ["小米9", "Redmi K20 Pro", "Redmi K20", "Redmi Note7 Pro", "Redmi Note7", "小米电视4c", "电视32英寸", "笔记本pro", "小爱音响", "净水器"];
 
-    // $(".header-search form input").focus(function() {
-    //     for (var i = 0; i < sInfo.length; i++) {
-    //         $(".header-search form search-hot-words a").eq(i).text(sInfo[i]);
-    //     }
-    //     $(".header-search form").css({ border: "1px solid #ff6700" }).children("search-btn").css({ borderLeft: "1px solid #ff6700" }).siblings("a").fadeOut(100, "linear").siblings("search-hot-words").css({ display: "flex" });
 
-    // })
-    // $(".header-search form input").blur(function() {
-    //     $(".header-search form").css({ border: "1px solid #e0e0e0" }).children("search-btn").css({ borderLeft: "1px solid #e0e0e0" }).siblings("a").fadeIn(100, "linear").siblings("search-hot-words").css({ display: "none" });
-    // })
-
+// 导航条
     getList()
 
     function getList() {
@@ -18,7 +8,7 @@ var sInfo = ["小米9", "Redmi K20 Pro", "Redmi K20", "Redmi Note7 Pro", "Redmi 
         url: '../lib/nav_top.json',
         dataType: 'json',
         success: function (res) {
-          console.log(res)
+          // console.log(res)
 
           // 4-1. 准备一个空字符串
           let str = ''
@@ -70,3 +60,109 @@ var sInfo = ["小米9", "Redmi K20 Pro", "Redmi K20", "Redmi Note7 Pro", "Redmi 
         }
       })
     }
+
+
+    // 轮播图纵向导航条
+
+    function getList2 () {
+
+      $.ajax({
+        // 获取数据：
+        url: "../lib/nav.json",
+        dataType: "json",
+  
+        // 渲染
+        success: function (res) {
+          // console.log(res)
+          let str1 = "";
+          res.forEach(ele => {
+            str1 += `<li>${ele.name}</li>`
+  
+            $(".site-category")
+              .html(str1)
+              .children("li")
+              .on({
+                mouseenter: () => $(".ban_box").css("display", "block"),
+                mouseleave: () => $(".ban_box").css("display", "none")
+              })
+              .on("mouseover", function () {
+                let index = $(this).index()
+                // console.log(index)
+                let list = res[index].list
+                let str2 = ""
+                list.forEach(ele => {
+                  str2 += `<li><img
+                  src=${ele.list_src}
+                  alt="">
+                  <span>${ele.list_name}</span></li>`
+                })
+                $(".ban_box>ul").html(str2)
+              })
+          })
+          $(".ban_box")
+            .on({
+              mouseenter: () => $(".ban_box").css("display", "block"),
+              mouseleave: () => $(".ban_box").css("display", "none")
+            })
+        }
+  
+      })
+  
+    }
+    getList2()
+  
+
+    // 小米闪购
+    function shanggou () {
+      $.ajax({
+        url: "../lib/xiaomishanggou.json",
+        dataType: "json",
+        success: function (res) {
+          let str = ""
+          res.forEach(function (ele) {
+            str += ` <div class="swiper-slide">
+            <div class="img">
+                <img src="${ele.src}" alt="">
+            </div>
+            <p class="name">${ele.name}</p>
+            <p class="text">${ele.desc}</p>
+            <p><mark>${ele.price}</mark><i>${ele.price}元</i></p>
+        </div>`
+          })
+          $("main .page-main .container .swiper-wrapper").html(str)
+  
+        }
+  
+      })
+    }
+    shanggou()
+ 
+     // 手机
+     function phone () {
+      $.ajax({
+        url: "../lib/phone.json",
+        dataType: "json",
+        success: function (res) {
+          let str = ""
+          res.forEach(function (ele) {
+            str += `<li><a href="#">
+            <div class="figuer_img">
+                <img src="${ele.src}"
+                    alt="">
+            </div>
+            <h3 class="title">
+            ${ele.name}
+            </h3>
+            <p class="desc">${ele.desc}</p>
+            <p class="price"><span class="num">${ele.price}</span>元<span>起</span>
+            </p>
+        </a></li>`
+          })
+          // console.log(str)
+          $(".span4>ul").html(str)
+        }
+      }).then(function () {
+        // console.log($(".body>.shangou>section>.img>li"))
+      })
+    }
+    phone()
