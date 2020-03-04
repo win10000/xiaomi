@@ -13,6 +13,55 @@
 
 <body>
 
+    <!-- 悬浮框 -->
+    <aside>
+        <ol>
+            <li>
+                <em>
+                    <img src="https://i8.mifile.cn/b2c-mimall-media/98a23aae70f25798192693f21c4d4039.png" alt="">
+                </em>
+                <p>手机APP</p>
+            </li>
+            <li>
+                <em>
+                    <img src="https://i8.mifile.cn/b2c-mimall-media/55cad219421bee03a801775e7309b920.png" alt="">
+                </em>
+                <p>个人中心</p>
+            </li>
+            <li>
+                <em>
+                    <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/12eb0965ab33dc8e05870911b90f3f13.png" alt="">
+                </em>
+                <p>售后服务</p>
+            </li>
+            <li>
+                <em>
+                    <img src="https://i8.mifile.cn/b2c-mimall-media/4f036ae4d45002b2a6fb6756cedebf02.png" alt="">
+                </em>
+                <p>人工服务</p>
+            </li>
+            <li>
+                <em>
+                    <img src="https://i8.mifile.cn/b2c-mimall-media/d7db56d1d850113f016c95e289e36efa.png" alt="">
+                </em>
+                <p>购物车</p>
+            </li>
+
+            <li id="btn">
+                <span class="glyphicon glyphicon-open" aria-hidden="true"></span>
+                <p>回到顶部</p>
+            </li>
+        </ol>
+        <div class="er">
+            <img src="https://i8.mifile.cn/b2c-mimall-media/93650133310ec1c385487417a472a26c.png" alt="">
+            <p>
+                手机扫一扫
+                <br>
+                一分赢好礼
+            </p>
+        </div>
+    </aside>
+
     <!-- 页头 -->
     <section class="header">
         <!-- 疫情广告 -->
@@ -39,8 +88,10 @@
                 </nav>
                 <!-- 购物车 -->
                 <article class="topbar-cart">
-                    <em class="glyphicon glyphicon-heart"></em>
-                    <em>购物车</em>
+                    <em>
+                        <img src="https://i8.mifile.cn/b2c-mimall-media/d7db56d1d850113f016c95e289e36efa.png" alt="">
+                    </em>
+                    <em class="car">购物车</em>
                     <span>(0)</span>
                 </article>
                 <!-- 登录注册 -->
@@ -59,7 +110,7 @@
                 <!-- logo图标 -->
                 <article class="header-logo">
                     <a href="#">
-                        <img src="../images/mi-logo.png" alt="小米logo">
+                        <img src="http://s02.mifile.cn/assets/static/image/mi-logo.png" alt="小米logo">
                     </a>
                 </article>
 
@@ -131,16 +182,6 @@
                     </div>
                 </div>
                 <ul class="site-category">
-                    <!-- <li>手机 电话卡</li>
-                    <li>电视盒子</li>
-                    <li>笔记本 显示器 平板</li>
-                    <li>家电 插线板</li>
-                    <li>出行 穿戴</li>
-                    <li>智能 路由器</li>
-                    <li>电源 配件</li>
-                    <li>健康 儿童</li>
-                    <li>耳机 音响</li>
-                    <li>生活 箱包</li> -->
                 </ul>
                 <div class="ban_box">
                     <ul>
@@ -210,45 +251,12 @@
                 <article class="row1">
                     <div class="span2">
                         <div class="round">14:00 场</div>
-                        <img src="../images/下载.png" alt="">
+                        <img src="data:img/jpg;base64,iVBORw0KGgoAAAANSUhEUgAAACIAAAA1CAYAAAAklDnhAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJ%0AbWFnZVJlYWR5ccllPAAAAyNpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdp%0Abj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6%0AeD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNS1jMDE0IDc5LjE1%0AMTQ4MSwgMjAxMy8wMy8xMy0xMjowOToxNSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJo%0AdHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlw%0AdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAv%0AIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RS%0AZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpD%0AcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIChNYWNpbnRvc2gpIiB4bXBNTTpJbnN0YW5j%0AZUlEPSJ4bXAuaWlkOjY4Q0ZFMkY5MTJFNzExRThCMkM4OEM1RTNBNjczQUVBIiB4bXBNTTpEb2N1%0AbWVudElEPSJ4bXAuZGlkOjY4Q0ZFMkZBMTJFNzExRThCMkM4OEM1RTNBNjczQUVBIj4gPHhtcE1N%0AOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6NjhDRkUyRjcxMkU3MTFFOEIy%0AQzg4QzVFM0E2NzNBRUEiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6NjhDRkUyRjgxMkU3MTFF%0AOEIyQzg4QzVFM0E2NzNBRUEiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94Onht%0AcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz5oEyacAAACoklEQVR42sSYv0tbURTHX0LqD6T4g4pE%0AcHDoUOloBxVd/QFFEcQqWtrSKlKFmmAslopohzgIbv4FwUEE0clFujiIi+BSIbRQ0ooKRReRULHf%0AS48Qgu++c3/FAx+iyU3eJzf3nnPuC/1qavQ04zVY8szjCHRGNN9cBD6DSkOJKzAGzsOaH/AW1FuY%0AjRg4EH/oiJSCTxYk1sDK7T86Iu9BraHED/Au9wlVkYdg2lAiC/rBhYnIB/DIUOQj2M9/UkWkCsQN%0AJbbA8l0vqIhMgXIDiZ/gFbgxEakBEwYSf8Eg+OM3gCsyA8oMRETy25UN4IjUgVEDiW2wGDSIIzIL%0AijUljsFLv3WhIvKYFphOXNO6OOUMDhKZA7qFcQF85Q6WXeQpeKEpcULlvY8xthp8iwR8I93qLLb7%0AKnOsSPWNfhd6Bro99yHqTi9IhyWzEXIsIXbSG7Djt1jbQHsBZkMkyZRs13wpgIRoiJKy7dsBWh1L%0AbN5Vt3JFQrQ2XMYeGKBk5yvSI7aRQ4k0eA4uZZlVPM47lDgTZxd6lKb4AcqkLuKSZiIdVGsiVFNc%0AxDV9yT1Orekjoe+MDw4pHqwmaJewit66Ql0QaX+DOTaZe4DitAFZxQaaEynKnJ6KCDeaQAtj3A7V%0AkBtXIpwT3iFV06zqquaKPKEtKIsM6Mo/StoWiQeMvSCJjO4+54hEwTCjuTk0STgckUm6QxTY3LgU%0AKc+/jyFrblyKCIkKbnPjSkT8HDGV5saVyBAtVHZz40Ik7HNTRtrcuBARF2tQbW5ciCR0mhvbIs2E%0AcnNjWySh29zYFGnIK25KzY1Nkdziptzc2BKJUu7Qbm5sicQom2o3NzZEKqiu/DZpbmyIjIAHNBMZ%0A7x4iTALjhcgVQSIl3v87w5vePcY/AQYAFYR6skFSqBUAAAAASUVORK5CYII=" alt="">
                         <div class="desc">距离结束还有</div>
                         <div class="countdown"><span>04</span><i>:</i><span>20</span><i>:</i><span>28</span></div>
                     </div>
                     <div class="swiper-container_row">
                         <div class="swiper-wrapper">
-                            <!-- <div class="swiper-slide">
-                                <div class="img">
-                                    <img src="../images/下载.png" alt="">
-                                </div>
-                                <p class="name">小米</p>
-                                <p class="text">谁买小米</p>
-                                <p><mark>499元</mark><i>599元</i></p>
-                            </div> -->
-                            <!-- <div class="swiper-slide">
-                                <div class="img">
-                                    <img src="../images/下载.png" alt="">
-                                </div>
-                                <p class="name">小米</p>
-                                <p class="text">谁买小米</p>
-                                <p><mark>499元</mark><i>599元</i></p>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="img">
-                                    <img src="../images/下载.png" alt="">
-                                </div>
-                                <p class="name">小米</p>
-                                <p class="text">谁买小米</p>
-                                <p><mark>499元</mark><i>599元</i></p>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="img">
-                                    <img src="../images/下载.png" alt="">
-                                </div>
-                                <p class="name">小米</p>
-                                <p class="text">谁买小米</p>
-                                <p><mark>499元</mark><i>599元</i></p>
-                            </div> -->
-
                         </div>
                     </div>
                 </article>
@@ -287,7 +295,7 @@
 
                 <!-- 小米特惠图片 -->
                 <article class="home-banner-box">
-                    <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/e48a0ce5d87d3648beee6d7a8b813f24.jpg?thumb=1&w=1226&h=120&f=webp&q=90"
+                    <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/41d16e66381cfeda7b6b39ab67678d5e.jpg?thumb=1&w=1226&h=120&f=webp&q=90"
                         alt="">
                 </article>
                 <!-- 家电模块 -->
@@ -295,16 +303,48 @@
                     <!-- 家电标题 -->
                     <article class="box-hd1">
                         <h2>家电</h2>
-                        <span><a href="">影视影音</a> </span>
-                        <span><a href="">热门</a> </span>
+                        <span> <a class="active q" href="">热门</a> <a class="w" href="">影视影音</a></span>
                     </article>
                     <!-- 手机列表 -->
-                    <article class="row3">
+                    <article class="row3 oneee aaaa">
                         <div class="span5">
                             <ul>
+                            </ul>
+                        </div>
+                    </article>
+                   <article class="row3 twooo moive">
+                        <div class="span5">
+                            <ul>
+                                 <li>
+                                    <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/b56fd90a60e3d9e5d87dae9fbd427ea8.jpg?thumb=1&w=234&h=300&f=webp&q=90"
+                                        alt="">
+                                </li>
+                                <li>
+                                    2
+                                </li>
+                                <li>2
+
+                                </li>
+                                <li>
+                                    3
+                                </li>
+                                <li>
+                                    2
+                                </li>
+                                <li>
+                                    <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/b56fd90a60e3d9e5d87dae9fbd427ea8.jpg?thumb=1&w=234&h=300&f=webp&q=90"
+                                        alt="">
+                                </li>
+                                <li>
+                                    2
+                                </li>
+                                <li>
+                                    2
+                                </li>
                                 <li>
                                     <div class="figuer_img">
-                                        <img src="https://cdn.cnbj0.fds.api.mi-img.com/b2c-mimall-media/2b911be4c2f156bb6e4cf367c6080045.jpg?thumb=1&w=200&h=200" alt="">
+                                        <img src="https://cdn.cnbj0.fds.api.mi-img.com/b2c-mimall-media/2b911be4c2f156bb6e4cf367c6080045.jpg?thumb=1&w=200&h=200"
+                                            alt="">
                                     </div>
                                     <h3 class="title">
                                         米家空调
@@ -313,14 +353,272 @@
                                     <p class="price"><span class="num">1399</span>元<span>起</span>
                                     </p>
                                 </li>
+                                <li>
+                                    <div>
+                                        <img src="" alt="">
+                                        <div>
+                                          <h3></h3>
+                                          <h4></h4>
+                                        </div>
+                                      </div>
+                                      <div>
+                                        <h3></h3>
+                                        <h4></h4>
+                                      </div>
+                                </li>
                             </ul>
                         </div>
                     </article>
                 </article>
 
+
+
+                <!-- 免费清洁图片 -->
+                <article class="home-banner-box">
+                    <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/e48a0ce5d87d3648beee6d7a8b813f24.jpg?thumb=1&w=1226&h=120&f=webp&q=90"
+                        alt="">
+                </article>
+                <!-- 智能模块 -->
+                <article class="home-brick-box">
+                    <!-- 智能标题 -->
+                    <article class="box-hd1">
+                        <h2>智能</h2>
+                        <span> <a class="active" href="">热门</a> <a href="">安防</a> <a href="">出行</a></span>
+                    </article>
+                    <!-- 智能列表 -->
+                    <article class="row3 show">
+                        <div class="span5">
+                            <ul>
+                            </ul>
+                        </div>
+                    </article>
+
+                    <article class="row3">
+                        <div class="span5">
+                            <ul>
+                            </ul>
+                        </div>
+                    </article>
+                </article>
+
+
+                <!-- 米家洗碗机图片 -->
+                <article class="home-banner-box">
+                    <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/4d739d7a2c017a287a689c9702ec3b20.jpg?thumb=1&w=1226&h=120&f=webp&q=90"
+                        alt="">
+                </article>
+                <!-- 搭配模块 -->
+                <article class="home-brick-box">
+                    <!-- 搭配标题 -->
+                    <article class="box-hd1">
+                        <h2>搭配</h2>
+                        <span> <a class="active" href="">热门</a> <a href="">耳机音箱</a></span>
+                    </article>
+                    <!-- 手机列表 -->
+                    <article class="row3 show">
+                        <div class="span5">
+                            <ul>
+                            </ul>
+                        </div>
+                    </article>
+
+                    <article class="row3">
+                        <div class="span5">
+                            <ul>
+                            </ul>
+                        </div>
+                    </article>
+                </article>
+
+
+                <!-- 米家空调图片 -->
+                <article class="home-banner-box">
+                    <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/89c2a209b742fce9b10d9d196149d634.jpg?thumb=1&w=1226&h=120&f=webp&q=90"
+                        alt="">
+                </article>
+                <!-- 配件模块 -->
+                <article class="home-brick-box">
+                    <!-- 配件标题 -->
+                    <article class="box-hd1">
+                        <h2>配件</h2>
+                        <span> <a class="active" href="">热门</a> <a href="">保护套</a> <a href="">充电器</a></span>
+                    </article>
+                    <!-- 配件列表 -->
+                    <article class="row3 show">
+                        <div class="span5">
+                            <ul>
+                            </ul>
+                        </div>
+                    </article>
+
+                    <article class="row3">
+                        <div class="span5">
+                            <ul>
+                            </ul>
+                        </div>
+                    </article>
+                </article>
+
+
+
+                <!-- 米兔手表图片 -->
+                <article class="home-banner-box">
+                    <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/10fb0086cb21120c53248a3d8cc56dc5.jpg?thumb=1&w=1226&h=120&f=webp&q=90"
+                        alt="">
+                </article>
+                <!-- 周边模块 -->
+                <article class="home-brick-box">
+                    <!-- 周边标题 -->
+                    <article class="box-hd1">
+                        <h2>周边</h2>
+                        <span> <a class="active" href="">热门</a> <a href="">热门出行</a></span>
+                    </article>
+                    <!-- 周边列表 -->
+                    <article class="row3 show">
+                        <div class="span5">
+                            <ul>
+                            </ul>
+                        </div>
+                    </article>
+
+                    <article class="row3">
+                        <div class="span5">
+                            <ul>
+                            </ul>
+                        </div>
+                    </article>
+                </article>
+
+
+
+                <!-- 小米中性笔图片 -->
+                <article class="home-banner-box">
+                    <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/88e35cffc82cd98cd53172460067af17.jpg?thumb=1&w=1226&h=120&f=webp&q=90"
+                        alt="">
+                </article>
+                <!-- 视频模块 -->
+                <article class="home-brick-box">
+                    <!-- 视频标题 -->
+                    <article class="box-hd1">
+                        <h2>周边</h2>
+                        <span class="glyphicon glyphicon-circle-arrow-right" aria-hidden="true"></span>
+                        <span>查看全部</span>
+                    </article>
+                    <!-- 视频列表 -->
+                    <article class="row3 show">
+                        <div class="span5">
+                            <ul>
+                            </ul>
+                        </div>
+                    </article>
+                </article>
             </section>
         </section>
     </main>
+
+
+    <!-- 页尾 -->
+    <footer>
+        <section class="head">
+            <article class="container">
+                <ul class="center">
+                    <li>预约维修服务</li>
+                    <li>7天无理由退货</li>
+                    <li>15天免费换货</li>
+                    <li>满99元包邮</li>
+                    <li>520余家售后网点</li>
+                </ul>
+                <article class="footer-links">
+                    <dl>
+                        <dt>帮助中心 </dt>
+                        <dd><a href="">账户管理</a> </dd>
+                        <dd><a href="">购物指南</a></dd>
+                        <dd><a href="">订单操作</a></dd>
+                    </dl>
+                    <dl>
+                        <dt>服务支持</dt>
+                        <dd><a href="">售后政策</a></dd>
+                        <dd><a href="">自助服务</a></dd>
+                        <dd><a href="">相关下载</a></dd>
+                    </dl>
+                    <dl>
+                        <dt>线下门店</dt>
+                        <dd><a href="">小米之家</a></dd>
+                        <dd><a href="">服务网点</a></dd>
+                        <dd><a href="">授权体验店</a></dd>
+                    </dl>
+                    <dl>
+                        <dt>关于小米</dt>
+                        <dd><a href="">了解小米</a></dd>
+                        <dd><a href="">加入小米</a></dd>
+                        <dd><a href="">投资者关系</a></dd>
+                        <dd><a href="">廉洁举报</a></dd>
+                    </dl>
+                    <dl>
+                        <dt>关注我们</dt>
+                        <dd><a href="">新浪微博</a></dd>
+                        <dd><a href="">官方微信</a></dd>
+                        <dd><a href="">联系我们</a></dd>
+                    </dl>
+                    <dl>
+                        <dt>特色服务</dt>
+                        <dd><a href="">F 码通道</a></dd>
+                        <dd><a href="">礼物码</a></dd>
+                        <dd><a href="">防伪查询</a></dd>
+                    </dl>
+                </article>
+
+                <article class="col-contact">
+                    <p class="phone">400-100-5678</p>
+                    <p class="day">周一至周日 8:00-18:00<br>（仅收市话费）</p>
+                    <a href="">人工服务</a>
+                </article>
+            </article>
+
+        </section>
+        
+        <section class="bottom">
+            <article class="center">
+                <article class="xiaomi">
+                    <img src="http://s02.mifile.cn/assets/static/image/mi-logo.png" alt="">
+                </article>
+              <div class="slogan">
+                <ul>
+                  <li><a href="">小米商城 |</a></li>
+                  <li><a href="">MIUI |</a></li>
+                  <li><a href="">米家 |</a></li>
+                  <li><a href="">米聊 |</a></li>
+                  <li><a href="">多看 |</a></li>
+                  <li><a href="">游戏 |</a></li>
+                  <li><a href="">政企服务 |</a></li>
+                  <li><a href="">小米天猫店 |</a></li>
+                  <li><a href="">小米集团隐私政策 |</a></li>
+                  <li><a href="">小米公司儿童信息保护规则 |</a></li>
+                  <li><a href="">小米商城隐私政策 |</a></li>
+                  <li><a href="">小米商城用户协议 |</a></li>
+                  <li><a href="">问题反馈 |</a></li>
+                  <li><a href="">Select Location</a></li>
+                </ul>
+                <br>
+                © <a href="">mi.com</a> <a href="">京ICP证110507号</a> <a href="">京ICP备10046444号</a> <a
+                  href="">京公网安备11010802020134号</a> <a href="">京网文[2020]0276-042号</a> <br>
+                <a href="">（京）网械平台备字（2018）第00005号</a> <a href="">互联网药品信息服务资格证 (京)-非经营性-2014-0090</a> <a href="">营业执照</a><a
+                  href="">医疗器械质量公告</a> <br>
+                <a href="">增值电信业务许可证</a>网络食品经营备案（京）【2018】WLSPJYBAHF-12
+                <a href="">食品经营许可证</a> <br>
+        
+                违法和不良信息举报电话：185-0130-1238 <a href="">知识产权侵权投诉</a> 本网站所列数据，除特殊说明，所有数据均出自我司实验室测试
+                <br>
+                <img src="//i1.mifile.cn/f/i/17/site/truste.png" alt="">
+                <img src="//s01.mifile.cn/i/v-logo-2.png" alt="">
+                <img src="//s01.mifile.cn/i/v-logo-1.png" alt="">
+                <img src="//i8.mifile.cn/b2c-mimall-media/ba10428a4f9495ac310fd0b5e0cf8370.png" alt="">
+              </div>
+            </article>
+        </section>
+    </footer>
+
+
 
     <script src="../lib/jquery/dist/jquery.min.js"></script>
     <script src="../js/index.js"></script>
