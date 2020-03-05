@@ -112,13 +112,6 @@ const sassHandler = () => {
             //  你把这个index.scss文件编译道理css文件夹里面了，它请求的是sass文件夹里面的index.css
 
 }
-
-// const sassHandler = () =>{
-//   return gulp.src('./src/sass/*.scss')
-//     .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
-//     .pipe(gulp.dest('./dist/cass'));
-// }
-
 // 9. 自动监控文件
 //    监控 src 下下面的文件, 只要一修改, 就执行对应的任务
 //    比如 src 下面的 css 文件夹, 只要里面的文件以修改, 我就执行以下 cssHandler 这个任务
