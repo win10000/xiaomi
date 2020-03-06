@@ -2,6 +2,14 @@ window.onload = function () {
 
 
 
+    // 登录注册
+    var btn_login = document.querySelector("#login")
+
+    $(btn_login).click(function () {
+        window.location.href = './login.html'
+    })
+
+
     // 2-1. 准备一个变量
     var flag = true
 
@@ -19,9 +27,9 @@ window.onload = function () {
         //   这个排序没用啊
         list2.sort(function (a, b) {
             if (flag === true) {
-                return a.slice(-2, 3) * 1 - b.slice(-2, 3) * 1;
+                return a.id - b.id;
             } else {
-                return b.slice(-2, 3) * 1 - a.slice(-2, 3) * 1;
+                return b.id - a.id;
             }
         })
 
@@ -47,7 +55,7 @@ window.onload = function () {
             }
         })
 
-        let data1 = slice(-2, 3) * 1
+        // let data1 = slice(-2, 3) * 1
 
         // 3. 先把第一页的数据渲染一次
         bindHtml(list2.slice(0, 12))
@@ -105,6 +113,7 @@ window.onload = function () {
                 // 3. 先把第一页的数据渲染一次
 
                 list2 = res.pus.slice(0, 100)
+                // console.log(list2);
 
                 bindHtml(list2)
 
@@ -115,6 +124,7 @@ window.onload = function () {
     }
 
     function bindHtml(list) {
+        // console.log(list);
 
         let str = ''
 
@@ -123,11 +133,47 @@ window.onload = function () {
         list.forEach(item => {
             str += `
             
-            <li data-id="${item[2]}"><span></span><span></span><img src="${item[0]}" alt=""><p>${item[1]}</p><strong><i><b>${item[2]}</b>元</i><i><b>${item[3]}</b>元</i></strong><img src="${item[0]}"></li>`
+            <li data-id="${item.id}"><span></span><span></span><img src="${item.url}" alt=""><p>${item.title}</p><strong><i><b>${item.price_new}</b>元</i><i><b>${item.price_old}</b>元</i></strong><img src="${item.url}"></li>`
         })
 
         $('.box > ul').html(str)
 
+        // console.log(str);
+
+
+
+
+
+        // 跳转详情页
+        $('.box > ul').on('click', 'li', function () {
+            // console.log('我应该找到 list2 这个数组中 id 为 ' + data1 + ' 的那一条数据')
+            const goodsid = $(this).attr('data-id');
+            // const goodsId = this.getAttribute('data-id') * 1;
+            let data = null;
+            // list.forEach(item => {
+            //     if(item.id == goodsid) {
+            //         data = item;
+            //         console.log('点击了这条数据' + item);                   
+            //     }
+            // })
+
+            for (let index in list) {
+                // console.log(item);
+                if (list[index].id == goodsid) {
+                    data = list[index];
+                    // console.log( list[index]);  
+                    break;
+                }
+            }
+
+            localStorage.setItem('goods_info', JSON.stringify(data))
+            console.log(data);
+
+
+            //实现跳转
+            location.href = './detail.html?' + JSON.stringify(data);
+
+        })
     }
 
     // search
@@ -160,36 +206,6 @@ window.onload = function () {
         $(".box>ul").on("mouseleave", "span", function () {
             $(this).text("");
         })
-    })
-
-
-
-
-
-    // 跳转详情页
-    $('.box > ul').on('click', 'li', function () {
-        // console.log('我应该找到 list2 这个数组中 id 为 ' + data1 + ' 的那一条数据')
-        const goodsId = this.getAttribute('data-id')*1;
-        // console.log(goodsId)
-        // let data = {}
-
-        let goods = list2.map((item, idx) => {
-            if (idx+1 === goodsId){
-                return item;
-            }
-        })
-
-        // for (let i = 0; i < list2.length; i++) {
-        //   if (list2[i].data1 === data1) {
-        //     data = list2[i]
-        //     break
-        //   }
-        // }
-
-        localStorage.setItem('goods_info', JSON.stringify(goodsId))
-
-
-        window.location.href = './detail.html'
     })
 
 }

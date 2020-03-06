@@ -16,6 +16,13 @@ btn.onclick = function () {
 }
 
 
+// 登录注册
+var btn_login = document.querySelector("#login")
+
+$(btn_login).click(function(){
+  window.location.href = './login.html'
+})
+
 // 导航条
 getList()
 
@@ -183,7 +190,7 @@ function phone() {
 }
 phone()
 
-// 家电 appliances
+// 家电 
 function appliances() {
   $.ajax({
     url: "../lib/appliances.json",
@@ -241,7 +248,7 @@ function appliances() {
 appliances()
 
 
-// 家电 appliances
+// 影音 
 function moive() {
   $.ajax({
     url: "../lib/moive.json",

@@ -11,11 +11,12 @@
 
   <div class="goodsInfo">
     <div class="left">
-      <img src="https://img.alicdn.com/bao/uploaded/https://img.alicdn.com/imgextra/i4/2251059038/O1CN01QedTp12GdSE17VuKI_!!2251059038.jpg_q60.jpg_.webp" alt="">
+      <img src="https://i1.mifile.cn/a1/pms_1569297737.97669352!200x200.jpg" alt="">
     </div>
     <div class="right">
       <p class="goodsName">商品详细介绍</p>
       <p class="price">100.00</p>
+      <p class="price_old">1000.00</p>
       <div class="btn">
         <button class="addCart">添加购物车</button>
         <button>直接购买</button>
@@ -27,7 +28,10 @@
   <script>
 
     // 1. 获取 localStorage 里面的数据
-    const info = JSON.parse(localStorage.getItem('goodsInfo'))
+    const info = JSON.parse(localStorage.getItem("goods_info"))
+    // 这个info能打印出来吗？不能，goods_info报错“
+    // console.log(info);
+    
 
     // 2. 判断数据是否存在
     if (!info) {
@@ -37,16 +41,19 @@
       alert('您要查看的数据不存在')
       // 跳转回列表页面
       window.location.href = './list.html'
+      console.log(info);
     }
 
     // 3. 渲染页面
     bindHtml()
     function bindHtml() {
-      $('.goodsInfo img').attr('src', info.verticalPic)
-      $('.goodsInfo .goodsName').text(info.name)
-      $('.goodsInfo .price').text('￥: ' + info.price)
+      $('.goodsInfo img').attr('src', info.url)
+      $('.goodsInfo .goodsName').text(info.title)
+      $('.goodsInfo .price').text('现价: ' + info.price_new)
+      $('.goodsInfo .price_old').text('原价: ' + info.price_old)
     }
 
+  
     // console.log(info)
 
     // 4. 点击添加购物车
@@ -61,6 +68,9 @@
       //    如果原先没有数据, 那么我就用一个空数组来代替
       //    如果有数据, 就用我们的数据
       const cartList = JSON.parse(localStorage.getItem('cartList')) || []
+      // 这是要哪个的 
+    // 在和的呀
+      console.log(cartList);
 
       // 象数组里面把本条数据添加进去
       // 4-4. 判断有没有这个数据
@@ -70,19 +80,22 @@
       //      返回值:
       //        true: 表示数组里面有这个信息
       //        false: 表示数组里面没有这个信息
+      // console.log(1);
+      
       let exits = cartList.some(item => {
         // 数组里面每一个的 id === 本页面的这条数据的 id
-        return item.id === info.id
+        return item.id*1 === info.id*1
+        
+        
       })
-
-      // console.log(exits)
+      // 可以？试试
       if (exits) {
         // 表示有这个信息了, 我们要让 number ++
         // console.log('已经存在 number ++')
         // 找到这个信息给他 number ++
         let data = null
         for (let i = 0; i < cartList.length; i++) {
-          if (cartList[i].id === info.id) {
+          if (cartList[i].goodsId === info.goodsId) {
             data = cartList[i]
             break
           }
@@ -91,14 +104,14 @@
         data.number++
 
         // 4-5. 数量添加的时候, 小计价格要改变
-        data.xiaoji = data.number * data.price // 数量 * 单价
+        data.xiaoji = data.number * data.price_new // 数量 * 单价
       } else {
         // 表示没有这个信息, 直接 push 就可以了
         // push 之前, 象里面添加一个 number 信息为 1
         info.number = 1
 
         // 4-5. 多添加一些信息
-        info.xiaoji = info.price // 因为默认是第一个, 小计就是单价
+        info.xiaoji = info.price_new // 因为默认是第一个, 小计就是单价
         info.isSelect = false // 默认不选中
         cartList.push(info)
       }

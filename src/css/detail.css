@@ -21,6 +21,16 @@
   height: 460px;
   font-size: 40px;
 }
+
+.goodsInfo .right .price{
+  color: red;
+}
+
+.goodsInfo .right .price_old{
+  color: #ccc;
+  text-decoration:line-through;
+}
+
 .goodsInfo .right button {
   width: 200px;
   height: 50px;

@@ -1,172 +1,248 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>购物车页面</title>
-    <link rel="stylesheet" href="../css/cart.css">
-    <link rel="stylesheet" href="../css/common.css">
-    <script src="../lib/jquery/dist/jquery.min.js"></script>
-    <script src="../js/cart.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="../sass/cart.css">
 </head>
-
 <body>
-    <header>
-        <span>
-            <p>
-                
-                <a href="javascript:;" title="小米官网"><img src="../images/logo_home.png" alt=""></a>
-                <a href="javascript:;"><img src="../images/logo_mi.jpg" alt=""></a>
-            </p>
-        </span>
-        <h3>我的购物车</h3>
-        <strong>温馨提示：产品是否购买成功，以最终下单为准哦，请尽快结算</strong>
-        <p>
-            <a href="javascript:;">登录</a>
-            <a href="javascript:;">注册</a>
-        </p>
-    </header>
-    <main>
-        <div>
-            <span>全选</span>
-            <span>商品名称</span>
-            <span>单价</span>
-            <span>数量</span>
-            <span>小计</span>
-            <span>操作</span>
-        </div>
-        <ul>
-        </ul>
-        <div>
-            <a href="javascript:;">继续购物</a>
-            <p>
-                共
-                <span></span>件商品
-            </p>
-            <span title="要去结算吗">去结算</span>
-        </div>
-        <fieldset>
-            <legend>
-                买购物车中商品的人还买了
-            </legend>
-            <ul>
-            </ul>
-        </fieldset>
-    </main>
-    <div class="footer_top">
-        <ul>
-            <li>
-                <img src="../images/footer_top1.jpg" alt=""> 预约维修服务
-            </li>
-            <li>
-                <img src="../images/footer_top2.jpg" alt="">7天无理由退货
-            </li>
-            <li>
-                <img src="../images/footer_top3.jpg" alt="">15天免费换货
-            </li>
-            <li>
-                <img src="../images/footer_top4.jpg" alt="">满99元包邮
-            </li>
-            <li>
-                <img src="../images/footer_top5.jpg" alt="">520余家售后网点
-            </li>
-        </ul>
-        <div>
-            <p>帮助中心
-                <a href="">账户管理</a>
-                <a href="">购物指南</a>
-                <a href="">订单操作</a>
-            </p>
-            <p>服务支持
-                <a href="">售后政策</a>
-                <a href="">自助服务</a>
-                <a href="">相关下载</a>
-            </p>
-            <p> 线下门店
-                <a href="">小米之家</a>
-                <a href="">服务网点</a>
-                <a href="">授权体验店</a>
-            </p>
-            <p>关于小米
-                <a href="">了解小米</a>
-                <a href="">加入小米</a>
-                <a href="">投资者关系</a>
-                <a href="">廉洁举报</a>
-            </p>
-            <p>关注我们
-                <a href="">新浪微博</a>
-                <a href="">官方微信</a>
-                <a href="">联系我们</a>
-            </p>
-            <p>特色服务
-                <a href="">F 码通道</a>
-                <a href="">礼物码</a>
-                <a href="">防伪查询</a>
-            </p>
-            <p>
-                <span>400-100-5678</span>
-                <strong>
-                    周一至周日 8:00-18:00<br>（仅收市话费）
-                </strong>
-                <i></i>
-            </p>
-        </div>
-    </div>
-    <footer>
-        <img src="../images/footer_logo.jpg" alt="">
-        <div>
-            <p>
-                <a href="javascript">小米商城</a>|
-                <a href="javascript">MIUI</a>|
-                <a href="javascript">米家</a>|
-                <a href="javascript">米聊</a>|
-                <a href="javascript">多看</a>|
-                <a href="javascript">游戏</a>|
-                <a href="javascript">政企服务</a>|
-                <a href="javascript">小米天猫店</a>|
-                <a href="javascript">小米集团隐私政策</a>|
-                <a href="javascript">小米公司儿童信息保护规则</a>|
-                <a href="javascript">小米商城隐私政策</a>|
-                <a href="javascript">小米商城用户协议</a>|
-                <a href="javascript">问题反馈</a>|
-                <a href="javascript">Select Location</a>
-            </p>
-            <p>
 
-                © mi.com 京ICP证110507号
-                <a href="script:;">京ICP备10046444号</a>
-                <a href="script:;">京公网安备11010802020134号</a>
-                <a href="script:;">京网文[2020]0276-042号</a><br>
-                <a href="script:;">（京）网械平台备字（2018）第00005号</a>
-                <a href="script:;">互联网药品信息服务资格证</a>
-                <a href="script:;">(京)-非经营性-2014-0090</a>
-                <a href="script:;">营业执照</a>
-                <a href="script:;">医疗器械质量公告</a><br>
-                <a href="script:;">网络食品经营备案（京）</a> 增值电信业务许可证 【2018】WLSPJYBAHF-12 食品经营许可证<br> 违法和不良信息举报电话：185-0130-1238
-                <a href="script:;">知识产权侵权投诉</a> 本网站所列数据，除特殊说明，所有数据均出自我司实验室测试
-            </p>
-            <p>
-                <img src="https://i1.mifile.cn/f/i/17/site/truste.png" alt="">
-                <img src="https://s01.mifile.cn/i/v-logo-2.png" alt="">
-                <img src="https://s01.mifile.cn/i/v-logo-1.png" alt="">
-                <img src="https://i8.mifile.cn/b2c-mimall-media/ba10428a4f9495ac310fd0b5e0cf8370.png" alt="">
-            </p>
+  <div class="cart"></div>
+
+
+  <script src="../lib/jquery/dist/jquery.min.js"></script>
+  <script>
+    /*
+      购物车页面的渲染工作
+        1. 获取 localStorage 中的购物车数组
+        2. 判断有没有数据
+        3. 渲染购物车页面
+          -> 全选按钮要渲染, 是否选中
+          -> 每一个商品的单选要渲染, 根据数据中的 isSelect 来渲染
+          -> 每一个商品的图片要渲染
+          -> 每一个商品的介绍要渲染
+          -> 每一个商品的数量要渲染
+          -> 每一个商品的价格要渲染
+          -> 每一个商品的小计要渲染
+          -> 选中商品数量要渲染
+          -> 总价要渲染
+          -> 去支付按钮, 是否禁用也要渲染, 如果没有选中的商品, 要禁用
+          -> 采取一个整体渲染的方式
+        4. 添加各种事件了
+          -> 全选按钮有事件
+          -> 单选按钮有事件
+          -> 减少商品数量有事件
+          -> 增加商品数量
+          -> 每一个的删除有事件
+          -> 清空购物车有事件
+    */
+
+    // 1. 获取数据
+    const cartList = JSON.parse(localStorage.getItem('cartList'))
+    // console.log(cartList);
+    
+
+    // 2. 判断有没有数据
+    if (!cartList) {
+      alert('您的购物车为空, 快去选购把')
+    } else {
+      // 3. 渲染页面
+      bindHtml()
+
+      // 4. 添加各种事件
+      bindEvent()
+    }
+
+    function bindHtml() {
+      // 整体渲染页面
+      // 全选按钮需要渲染
+      //   判断一下, 如果数组里面每一个数据的 isSelect 都是 true, 就渲染成 true
+      //   只要有任意一个数组的 isSelect 是 false. 就渲染成 false
+      //   有一个数组常用方法叫做 every
+      let selectAll = cartList.every(item => {
+        // 如果每一条都是 true, 就会返回 true
+        // 如果任意一条是 false, 就会返回 false
+        return item.isSelect === true
+      })
+
+      let str = `
+        <div class="top">
+          <input class="selectAll" type="checkbox" ${ selectAll ? 'checked' : '' }>   全选
         </div>
-    </footer>
-    <div class="cover"></div>
-    <div class="del">
-        <em>X</em>
-        <h3>确认删除吗？</h3>
-        <p>
-            <span>取消</span>
-            <span>确认</span>
-        </p>
-    </div>
-    <div class="settle">
-        您即将消费
-        <span></span> 元
-    </div>
+        <ul class="center">
+      `
+
+      cartList.forEach(item => {
+        // 每一条数据的渲染, 根据每一条信息来渲染页面
+        str += `
+          <li>
+            <div class="select">
+              <input data-id=${ item.id } class="selectOne" type="checkbox" ${ item.isSelect ? 'checked' : '' }>
+            </div>
+            <div class="info">
+              <img src="${ item.url }" alt="">
+              <p>${ item.title }</p>
+            </div>
+            <p class="price">${ item.price_new }</p>
+            <div class="number">
+              <button class="sub" data-id=${ item.id }>-</button>
+              <input type="text" value="${ item.number }">
+              <button class="add" data-id=${ item.id }>+</button>
+            </div>
+  
+            <div class="del" data-id=${ item.id }>删除</div>
+          </li>
+        `
+        
+      })
+
+      // 选中商品数量需要渲染
+      //   要把数组中的 isSelect 为 true 的数据的 number 加再一起
+      //   数组常用方法叫做 filter 就能筛选数据
+      let selectArr = cartList.filter(item => item.isSelect)
+      console.log(selectArr)
+
+      // 选中商品数量计算
+      let selectNumber = 0
+      // 选中商品总价
+      let selectPrice = 0
+      selectArr.forEach(item => {
+        selectNumber += item.number
+        selectPrice += item.xiaoji
+      })
+
+      // 去支付要不要禁用, 如果没有选中的商品, 就应该禁用
+      //   只要有选中的商品, 就应该不禁用
+      //   直接使用 selectArr 的 length 来判断
+
+      str += `
+        </ul>
+        <div class="bottom">
+          <p>选中商品数量  <span>${ selectNumber }</span></p>
+          <p>总价： <span>￥： ${ selectPrice}</span></p>
+          <button class="pay" ${ selectArr.length ? '' : 'disabled'}>去支付</button>
+          <button class="clear">清空购物车</button>
+        </div>
+      `
+
+      // 整体添加到页面的盒子里面
+      $('.cart').html(str)
+    //   console.log( selectPrice.toFixed(2));
+      
+    }
+
+    function bindEvent() {
+      // 4-1. 全选按钮的事件
+      $('.cart').on('change', '.selectAll', function () {
+        // 自己的状态就是每一条数据的状态
+        // 先获取自己的状态
+        // console.log(this.checked)
+        // 让数组里面的每一个数据的 isSelect 都变成 自己的状态
+        cartList.forEach(item => {
+          item.isSelect = this.checked
+        })
+
+        // 从新使用这个数据去渲染一遍页面就可以了
+        //   因为从新渲染页面了, 页面上的元素就变了, 是一套新的元素了
+        //   就没有事件了, 因为页面回改变元素, 我们最好使用事件委托
+        bindHtml()
+
+        // 在从新存储一遍 localStorage
+        localStorage.setItem('cartList', JSON.stringify(cartList))
+      })
+
+      // 4-2. 单选按钮的事件
+      $('.cart').on('change', '.selectOne', function () {
+        // console.log($(this).data('id'))
+        // 你要知道你点击的是哪一个数据的单选按钮
+        const id = $(this).data('id')
+        
+
+        // 找到数组中 id 一样的那一条数据改变一下 isSelect 属性
+        cartList.forEach(item => {
+          if (item.id*1 === id) {
+            //   console.log(1);
+            // console.log(222)
+            item.isSelect = !item.isSelect
+          }
+        //   打印这
+        })
+
+        // 从新渲染页面
+        bindHtml()
+
+        // 打印看下
+
+        // 从新存储到 lcoalStorage 里面
+        localStorage.setItem('cartList', JSON.stringify(cartList))
+      })
+
+      // 4-3. 减少商品数量的事件
+      $('.cart').on('click', '.sub', function () {
+        // console.log(this)
+        // 找到你点击的是哪一个数据的 减少 按钮
+        const id = $(this).data('id')
+        // 循环数组, 把 id 对应的这个数据的 number 和 小计修改了
+        cartList.forEach(item => {
+          if (item.id*1 === id) {
+            // 当 item.number === 1 的时候, 不需要 --
+            item.number > 1 ? item.number-- : ''
+            item.xiaoji = item.price_new * item.number
+            console.log(item.xiaoji);
+            console.log(1);
+          }
+        })
+       
+        
+
+        // 从新渲染一遍页面
+        bindHtml()
+       
+        
+
+        // 在从新存储一遍 localStorage
+        localStorage.setItem('cartList', JSON.stringify(cartList))
+      })
+
+      // 4-4. 添加商品按钮的事件
+      $('.cart').on('click', '.add', function () {
+        // 拿到自己身上存储的 id
+        const id = $(this).data('id')
+
+        // 循环数组找到一个id 对应的数据
+        cartList.forEach(item => {
+          if (item.id*1 === id) {
+            item.number++
+            item.xiaoji = item.number * item.price_new
+          }
+        //   console.log(item.number);
+          
+        })
+
+        // 从新渲染页面
+        bindHtml()
+
+        // 在从新存储一遍 localStorage
+        localStorage.setItem('cartList', JSON.stringify(cartList))
+      })
+
+      // 4-5. 点击删除的事件
+      $('.cart').on('click', '.del', function () {
+        // 拿到自己身上的 id
+        const id = $(this).data('id')
+
+        console.log('把数组中 id 为 : ' + id + ' 的数去去掉, 从新渲染页面, 从新存储到 lcoalStorage')
+      })
+
+      // 4-6. 点击清除的事件
+      $('.cart').on('click', '.clear', function () {
+        console.log('把数组清空')
+        console.log('从新渲染页面')
+        console.log('把空数组从新存储到 lcoalStorage 里面')
+      })
+    }
+  </script>
 </body>
-
 </html>
