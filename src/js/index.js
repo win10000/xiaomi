@@ -84,6 +84,23 @@ function getList() {
   })
 }
 
+  // 搜索框点击下拉菜单
+   // search
+   var sInfo = ["小米9", "Redmi K20 Pro", "Redmi K20", "Redmi Note7 Pro", "Redmi Note7", "小米电视4c", "电视32英寸", "笔记本pro", "小爱音响", "净水器"];
+   // 搜索框部分获取焦点、失去焦点的效果
+   $(".header-search form input").focus(function () {
+       // 信息渲染
+       for (var i = 0; i < sInfo.length; i++) {
+           $(".header-search form p a").eq(i).text(sInfo[i]);
+       }
+       $(".header-search form").css({ border: "1px solid #ff6700" }).children("button").css({ borderLeft: "1px solid #ff6700" }).siblings(".m1").fadeOut(100, "linear").siblings("p").css({ display: "flex" });
+
+   })
+   $(".header-search form input").blur(function () {
+       $(".header-search form").css({ border: "1px solid #e0e0e0" }).children("button").css({ borderLeft: "1px solid #e0e0e0" }).siblings(".m1").fadeIn(100, "linear").siblings("p").css({ display: "none" });
+   })
+
+
 
 // 轮播图纵向导航条
 
@@ -134,6 +151,12 @@ function getList2() {
 }
 getList2()
 
+
+// 给所有的main下的li绑定一个点击事件
+$('main .page-main ul').on('click','li',function(){
+  window.location.href = './list.html'
+  console.log(1);
+})
 
 // 小米闪购
 function shanggou() {

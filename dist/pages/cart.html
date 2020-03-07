@@ -1,4 +1,4 @@
-<!DOCTYPE html><html lang=en><head><meta charset=UTF-8><meta name=viewport content="width=device-width,initial-scale=1"><meta http-equiv=X-UA-Compatible content="ie=edge"><title>Document</title><link rel=stylesheet href=../sass/cart.css></head><body><div class=cart></div><script src=../lib/jquery/dist/jquery.min.js></script><script>/*
+<!DOCTYPE html><html lang=en><head><meta charset=UTF-8><meta name=viewport content="width=device-width,initial-scale=1"><meta http-equiv=X-UA-Compatible content="ie=edge"><title>Document</title><link rel=stylesheet href=../sass/cart.css><script src=../js/cookie.js></script></head><body><div class=cart></div><script src=../lib/jquery/dist/jquery.min.js></script><script>/*
       购物车页面的渲染工作
         1. 获取 localStorage 中的购物车数组
         2. 判断有没有数据
@@ -22,6 +22,13 @@
           -> 每一个的删除有事件
           -> 清空购物车有事件
     */
+
+    // 0.判断login是否为空，
+    // var login = getCookie('login')
+
+    // if(login === ''){
+    //   window.location.href = './login.html'
+    // }
 
     // 1. 获取数据
     const cartList = JSON.parse(localStorage.getItem('cartList'))

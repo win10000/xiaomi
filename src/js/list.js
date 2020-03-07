@@ -24,7 +24,6 @@ window.onload = function () {
 
         // 不管是什么都要把数组重组
 
-        //   这个排序没用啊
         list2.sort(function (a, b) {
             if (flag === true) {
                 return a.id - b.id;
